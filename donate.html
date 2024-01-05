@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="donate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Donation</title>
+  </head>
+  <body>
+  <!-- header -->
+      <header>
+       <div class="navbar">
+
+            <div class="logo">
+                <a href="#">Pet Lovers</a>
+            </div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html#Services">Services</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="bx bx-menu"></i>
+            </div>
+      </div>
+    </header>
+    
+  <!-- section -->
+    <form class="donation" method="post" action="">
+      <div class="donation-form">
+        <div class="form-tittle">
+          <h2>Donation Form</h2>
+        </div>
+        <div class="form-value">
+          <span onclick="setInputValue('10000')">Rp 10.000</span>
+          <span onclick="setInputValue('25000')">Rp 25.000</span>
+          <span onclick="setInputValue('50000')">Rp 50.000</span>
+          <span onclick="setInputValue('100000')">Rp 100.000</span>
+        </div>
+        <div class="form-info">
+          <label for="nominal">Nominal:</label>
+          <input type="text" name="nominal" id="nominal"
+           placeholder="Masukan Jumlah" oninput="changeInput()" maxlength="15" value="" required="" />
+           
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" id="nama"
+          placeholder="Masukan Nama" value="" required="" />
+          
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" 
+          placeholder="Masukan Email" value="" required=""/>
+        </div>
+        <div class="submit">
+          <button type="button" onclick="showModal()">
+            Donate Now
+          </button>
+        </div>
+          <!-- Modal -->
+      <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Terima kasih atas donasinya!</p>
+  </div>
+</div>
+      </div>
+    </form>
+  
+
+  <!-- footer -->
+    
+    <footer id="contact" class="footer">
+
+        <div class="footer-left">
+
+            <h3>Donate Method</h3>
+            <div class="credit-cards">
+                <img src="img/visa.png">
+                <img src="img/master.png">
+                <img src="img/paypal.png">
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Indonesia</span> Jawa Barat, Bandung</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+62-882-0020-52541</a></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">2372022@maranatha.ac.id</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+                Website ini berbagi tentang hewan terlantar, dan kami sebagai pet lovers menolong hewan hewan yang terlantar. Kami juga membuka donasi dan adopsi untuk sesama pet lovers
+            </p>
+
+            <div class="footer-media">
+                <a href="https://www.youtube.com/watch?v=Ko-AJCzqDGk"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/son.cjj?igsh=aHZxNmU5a3NoaXN3"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/groups/377755187101689/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FPLC_Singapore"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

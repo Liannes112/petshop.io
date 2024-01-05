@@ -1,0 +1,241 @@
+body {
+  min-height: 100vh;
+}
+
+.donation {
+  margin: 180px auto 0;
+  width: 70vw;
+  height: 70%;
+  border: 1px solid black;
+  background-color: #FAEED1;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.form-tittle {
+  margin: 12px;
+}
+
+.form-value {
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-value span {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px 13px;
+  color: black;
+  background-color: #B4D4FF;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+
+.form-value span:hover {
+  color: white;
+  background-color: #525CEB;
+}
+.form-value span:active {
+  box-shadow: none;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+.form-info label {
+  color: Black;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.form-info input {
+  width: 100%;
+  padding: 15px 5px;
+  background-color: #faeed1;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 15px 0;
+}
+
+.form-info input:focus{
+  border-bottom: 1px solid blue;
+  outline: none;
+  
+}
+
+.form-info input placeholder {
+  font-size: 10px;
+  
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.submit button {
+  padding: 8px;
+  border-radius: 10%;
+  background-color: #65B741;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+  border: 1px solid black;
+  top: 0;
+  z-index: 9999;
+  
+}
+
+.modal-content {
+  background-color: white;
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 6%;
+}
+
+.modal-content p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 60px;
+  padding: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  
+}
+
+footer {
+  position: absolute;
+}
+
+
+
+@media (max-width: 380px){
+  
+  .close {
+    font-size: 18px;
+  }
+  
+  .modal-content p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px){
+  
+  .close {
+    font-size: 28px;
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px){
+  footer {
+    position: static;
+  }
+  
+  .close {
+    padding: 0;
+    font-size: 50px;
+  }
+  
+  .modal-content p {
+    font-size: 24px;
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .donation {
+    height: 60vh;
+  }
+  
+  .donation-form {
+    justify-content: space-around;
+  }
+  
+  .form-info label {
+    font-size: 1.6em;
+  }
+  
+  .form-info input::placeholder {
+    font-size: 1.4em;
+  }
+  
+  .form-tittle {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+  
+  .form-value span {
+    padding: 20px;
+    font-size: 24px;
+  }
+  .submit button {
+    padding: 18px 30px;
+    font-size: 28px;
+  }
+}
+@media (min-width: 1400px) {
+  .donation {
+    height: 60vh;
+  }
+  
+  .donation-form {
+    justify-content: space-evenly;
+  }
+  
+   form-info label {
+     font-size: 1.8em;
+   }
+   
+   .form-info::placeholder {
+     font-size: 1.6em;
+   }
+  
+  .form-tittle {
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  
+  .form-value span {
+    padding: 40px;
+    font-size: 28px;
+  }
+  .submit button {
+    padding: 28px 40px;
+    font-size: 34px;
+  }
+}

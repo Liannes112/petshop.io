@@ -1,0 +1,141 @@
+.main-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #ddd;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #888;
+  padding: 15px;
+}
+
+.search-input {
+  width: 80vw;
+  margin-top: 20px;
+}
+
+.search-input input {
+  width: 100%;
+  margin: 12px;
+  padding: 8px;
+}
+
+.main-content {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.content-tittle {
+  margin-bottom: 10px;
+}
+
+.content-tittle h2 {
+  font-size: 52px;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.shop-img {
+  width: 30%;
+  margin: auto;
+}
+
+.shop-img img {
+  width: 100%;
+  
+}
+
+.shop-info {
+  width: 70%;
+  border: 1px solid
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shop-tittle {
+  text-align: center;
+  margin: 10px;
+}
+
+.shop-address {
+  text-align: center;
+  margin: 10px;
+}
+
+.shop-tittle a {
+  color: Black;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.shop-address p {
+  font-size: 34px;
+}
+
+footer {
+  position: static;
+}
+
+
+/* responsive */
+
+@media (max-width: 1080px) {
+  
+  .content-tittle h2 {
+    font-size: 36px;
+  }
+  
+  .shop-img {
+    width: 50%;
+  }
+  
+  .shop-tittle a {
+    font-size: 30px;
+  }
+  
+  .shop-address p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 630px) {
+  .content-tittle h2 {
+    font-size: 30px;
+  }
+  
+  .shop-tittle a {
+    font-size: 24px;
+  }
+  
+  .shop-address p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-tittle h2 {
+    font-size: 20px;
+  }
+  
+  .shop-tittle a {
+    font-size: 14px;
+  }
+  .shop-address p {
+    font-size: 8px;
+  }
+}
